@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+	var fruit = ["귤","사과","배","딸기","포도","망고","바나나"];
+	var price = ["10","20","30","40","50","60","70"];
+	
+	function enter() {
+		var fruit_name = document.getElementById("inputValue").value;
+		var fruit_index = fruit.indexOf(fruit_name);
+		var output = price[fruit_index];
+		document.getElementById("fruit_price").textContent = output;
+	}
+</script>
+</head>
+<body>
+	<h1>21760036 임성진 자바스크립트 과제</h1>
+	<p>과일의 종류 : 귤 사과 배 딸기 포도 망고 바나나</p>
+	<input type="text" id="inputValue">
+	<button onclick="enter()">입력</button> <br><br> 
+	<p>과일의 가격 :  <span id="fruit_price"> 0 </span> </p>
+</body>
+</html>
