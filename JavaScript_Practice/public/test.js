@@ -1,11 +1,8 @@
-var arr = ['zero', 'one', 'two'];
-arr.color = "blue";
-arr.name = "JIN";
+var test = "test";
+console.log(test);
 
-for(var prop in arr) {
-	console.log(prop + " : " + arr[prop]);
+var say = function() {
+	console.log(window.test);
 }
 
-for(var i=0; i<arr.length; i++) {
-	console.log(i,":", arr[i]);
-}
+say();
